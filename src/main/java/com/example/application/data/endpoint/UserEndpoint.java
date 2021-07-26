@@ -1,5 +1,6 @@
 package com.example.application.data.endpoint;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.example.application.data.entity.User;
@@ -18,5 +19,9 @@ public class UserEndpoint {
 
     public Optional<User> getAuthenticatedUser() {
         return authenticatedUser.get();
+    }
+
+    public List<Long> failingEndpoint(Long... something) {
+        return null;
     }
 }
